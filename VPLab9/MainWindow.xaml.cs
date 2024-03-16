@@ -22,9 +22,12 @@ namespace VPLab9
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<ToyModel> toys = new List<ToyModel>();
+
         public MainWindow()
         {
             InitializeComponent();
+            toysDataGrid.ItemsSource = toys;
         }
     }
 }
