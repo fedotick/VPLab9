@@ -58,6 +58,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddToyWindow.xaml.cs">
+      <DependentUpon>AddToyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToyModel.cs" />
+    <Page Include="AddToyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

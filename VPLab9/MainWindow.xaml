@@ -23,7 +23,7 @@
                 <MenuItem Header="Exit"/>
             </MenuItem>
             <MenuItem Header="Edit">
-                <MenuItem Header="Add"/>
+                <MenuItem Header="Add" Click="Add_Click"/>
             </MenuItem>
         </Menu>
 

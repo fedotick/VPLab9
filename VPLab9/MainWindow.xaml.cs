@@ -29,5 +29,11 @@ namespace VPLab9
             InitializeComponent();
             toysDataGrid.ItemsSource = toys;
         }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            AddToyWindow addToyWindow = new AddToyWindow();
+            addToyWindow.ShowDialog();
+        }
     }
 }

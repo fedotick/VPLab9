@@ -14,3 +14,5 @@ C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Pr
 C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.csproj.CoreCompileInputs.cache
 C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.exe
 C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.pdb
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\AddToyWindow.g.cs
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\AddToyWindow.baml
