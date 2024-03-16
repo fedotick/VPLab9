@@ -1,0 +1,16 @@
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\bin\Debug\VPLab9.exe.config
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\bin\Debug\VPLab9.exe
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\bin\Debug\VPLab9.pdb
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.csproj.AssemblyReference.cache
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.csproj.SuggestedBindingRedirects.cache
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\MainWindow.g.cs
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\App.g.cs
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9_MarkupCompile.cache
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9_MarkupCompile.lref
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\MainWindow.baml
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.g.resources
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.Properties.Resources.resources
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.csproj.GenerateResource.cache
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.csproj.CoreCompileInputs.cache
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.exe
+C:\Users\Фёдор Ткачук\OneDrive\CEITI\III year - II semester\Visual Programming\VPLab9\VPLab9\obj\Debug\VPLab9.pdb
