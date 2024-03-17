@@ -60,5 +60,21 @@ namespace VPLab9
                 }
             }
         }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (toysDataGrid.SelectedItem != null)
+                {
+                    var selectedRow = toysDataGrid.SelectedItem as ToyModel;
+                    toys.Remove(selectedRow);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
