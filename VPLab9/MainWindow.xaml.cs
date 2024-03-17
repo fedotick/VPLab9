@@ -126,7 +126,12 @@ namespace VPLab9
             }
         }
 
-            private void Add_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
         {
             AddToyWindow addToyWindow = new AddToyWindow();
             addToyWindow.ShowDialog();

@@ -19,7 +19,7 @@
                 <MenuItem Header="Open..." Click="Open_Click"/>
                 <MenuItem x:Name="menuItemSave" Header="Save" IsEnabled="False" Click="Save_Click"/>
                 <MenuItem x:Name="menuItemSaveAs" Header="Save as..." IsEnabled="False" Click="SaveAs_Click"/>
-                <MenuItem Header="Exit"/>
+                <MenuItem Header="Exit" Click="Exit_Click"/>
             </MenuItem>
             <MenuItem Header="Edit">
                 <MenuItem Header="Add" Click="Add_Click"/>
