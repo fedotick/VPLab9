@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -51,15 +53,15 @@ namespace VPLab9
                     {
                         var values = line.Split('|');
 
-                        if (values.Length == 6)
+                        if (values.Length == 5)
                         {
                             ToyModel toy = new ToyModel
                             {
-                                Name = values[1],
-                                ManufacturerCountry = values[2],
-                                TypeOfToy = values[3],
-                                Price = int.Parse(values[4]),
-                                ImagePath = values[5]
+                                Name = values[0],
+                                ManufacturerCountry = values[1],
+                                TypeOfToy = values[2],
+                                Price = int.Parse(values[3]),
+                                ImagePath = values[4]
                             };
 
                             toys.Add(toy);
@@ -73,6 +75,26 @@ namespace VPLab9
                 {
                     MessageBox.Show(ex.Message);
                 }
+            }
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(filePath))
+                {
+                    foreach (var toy in toys)
+                    {
+                        sw.WriteLine($"{toy.Name}|{toy.ManufacturerCountry}|{toy.TypeOfToy}|{toy.Price.ToString()}|{toy.ImagePath}");
+                    }
+                }
+
+                MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
