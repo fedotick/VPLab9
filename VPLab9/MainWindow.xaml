@@ -24,6 +24,9 @@
             <MenuItem Header="Edit">
                 <MenuItem Header="Add" Click="Add_Click"/>
             </MenuItem>
+            <MenuItem Header="Chart">
+                <MenuItem x:Name="menuItemCreateChart" Header="Create chart" IsEnabled="False" Click="CreateChart_Click"/>
+            </MenuItem>
         </Menu>
 
         <DataGrid x:Name="toysDataGrid" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">

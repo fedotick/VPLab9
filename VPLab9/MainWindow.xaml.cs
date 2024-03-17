@@ -70,6 +70,7 @@ namespace VPLab9
 
                     menuItemSave.IsEnabled = true;
                     menuItemSaveAs.IsEnabled = true;
+                    menuItemCreateChart.IsEnabled = true;
                 }
                 catch (Exception ex)
                 {
@@ -140,6 +141,10 @@ namespace VPLab9
             if (newToy != null)
             {
                 toys.Add(newToy);
+
+                menuItemSave.IsEnabled = true;
+                menuItemSaveAs.IsEnabled = true;
+                menuItemCreateChart.IsEnabled = true;
             }
         }
 
@@ -159,6 +164,12 @@ namespace VPLab9
                     toys[index] = addToyWindow.NewToy;
                 }
             }
+        }
+
+        private void CreateChart_Click(object sender, RoutedEventArgs e)
+        {
+            ChartWindow chartWindow = new ChartWindow(toys);
+            chartWindow.ShowDialog();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
