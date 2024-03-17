@@ -98,7 +98,35 @@ namespace VPLab9
             }
         }
 
-        private void Add_Click(object sender, RoutedEventArgs e)
+        private void SaveAs_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+
+                if (saveFileDialog.ShowDialog() == true)
+                {
+                    string newFilePath = saveFileDialog.FileName;
+
+                    using (StreamWriter sw = new StreamWriter(newFilePath))
+                    {
+                        foreach (var toy in toys)
+                        {
+                            sw.WriteLine($"{toy.Name}|{toy.ManufacturerCountry}|{toy.TypeOfToy}|{toy.Price.ToString()}|{toy.ImagePath}");
+                        }
+                    }
+
+                    MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error saving file: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+            private void Add_Click(object sender, RoutedEventArgs e)
         {
             AddToyWindow addToyWindow = new AddToyWindow();
             addToyWindow.ShowDialog();
