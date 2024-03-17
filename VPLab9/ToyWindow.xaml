@@ -52,7 +52,7 @@
             </ComboBox>
 
             <Image x:Name="imagePreview" Grid.Row="8" Height="200"/>
-            <Label x:Name="labelBrowse" Grid.Row="8" Width="250" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Blue" Cursor="Hand" Content="Browse image..." MouseLeftButtonDown="LabelBrowse_MouseLeftButtonDown"/>
+            <Label x:Name="labelBrowse" Grid.Row="8" Width="250" Height="200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Blue" Cursor="Hand" Content="Browse image..." MouseLeftButtonDown="LabelBrowse_MouseLeftButtonDown"/>
 
             <Button Grid.Row="9" Content="Add Toy" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Add_Click"/>
         </Grid>
