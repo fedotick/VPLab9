@@ -23,12 +23,57 @@ namespace VPLab9
     /// </summary>
     public partial class MainWindow : Window
     {
+        string filePath = "";
         ObservableCollection<ToyModel> toys = new ObservableCollection<ToyModel>();
 
         public MainWindow()
         {
             InitializeComponent();
             toysDataGrid.ItemsSource = toys;
+        }
+
+        private void Open_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                try
+                {
+                    filePath = openFileDialog.FileName;
+
+                    var lines = System.IO.File.ReadAllLines(filePath);
+
+                    if (toys.Count() > 0)
+                    {
+                        toys.Clear();
+                    }
+                    foreach (var line in lines)
+                    {
+                        var values = line.Split('|');
+
+                        if (values.Length == 6)
+                        {
+                            ToyModel toy = new ToyModel
+                            {
+                                Name = values[1],
+                                ManufacturerCountry = values[2],
+                                TypeOfToy = values[3],
+                                Price = int.Parse(values[4]),
+                                ImagePath = values[5]
+                            };
+
+                            toys.Add(toy);
+                        }
+                    }
+
+                    menuItemSave.IsEnabled = true;
+                    menuItemSaveAs.IsEnabled = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
