@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,18 @@ namespace VPLab9
         public AddToyWindow()
         {
             InitializeComponent();
+        }
+
+        private void LabelBrowse_MouseLeftButtonDown(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg|All files (*.*)|*.*";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string imagePath = openFileDialog.FileName;
+                BitmapImage bitmap = new BitmapImage(new Uri(imagePath));
+                imagePreview.Source = bitmap;
+            }
         }
     }
 }

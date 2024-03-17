@@ -51,6 +51,7 @@
                 <ComboBoxItem Content="For toddlers"/>
             </ComboBox>
 
+            <Label x:Name="labelBrowse" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Blue" Content="Browse image..." MouseLeftButtonDown="LabelBrowse_MouseLeftButtonDown"/>
             <Image x:Name="imagePreview" Grid.Row="8" Height="200"/>
 
             <Button Grid.Row="9" Content="Add Toy" VerticalAlignment="Center" HorizontalAlignment="Center"/>
