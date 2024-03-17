@@ -36,16 +36,16 @@
             </Grid.RowDefinitions>
 
             <TextBlock Grid.Row="0" Text="Name:" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="1" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxName" Grid.Row="1" VerticalAlignment="Center"/>
 
             <TextBlock Grid.Row="2" Text="Manufacturer Country:" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="3" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxManufacturerCountry" Grid.Row="3" VerticalAlignment="Center"/>
 
             <TextBlock Grid.Row="4" Text="Price:" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="5" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxPrice" Grid.Row="5" VerticalAlignment="Center"/>
 
             <TextBlock Grid.Row="6" Text="Type:" VerticalAlignment="Center"/>
-            <ComboBox Grid.Row="7" VerticalAlignment="Center">
+            <ComboBox x:Name="comboBoxType" Grid.Row="7" VerticalAlignment="Center">
                 <ComboBoxItem Content="For boys"/>
                 <ComboBoxItem Content="For girls"/>
                 <ComboBoxItem Content="For toddlers"/>
@@ -54,7 +54,7 @@
             <Label x:Name="labelBrowse" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Blue" Content="Browse image..." MouseLeftButtonDown="LabelBrowse_MouseLeftButtonDown"/>
             <Image x:Name="imagePreview" Grid.Row="8" Height="200"/>
 
-            <Button Grid.Row="9" Content="Add Toy" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Button Grid.Row="9" Content="Add Toy" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Add_Click"/>
         </Grid>
     </Grid>
 </Window>

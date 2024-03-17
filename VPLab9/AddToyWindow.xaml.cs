@@ -20,6 +20,8 @@ namespace VPLab9
     /// </summary>
     public partial class AddToyWindow : Window
     {
+        public ToyModel NewToy { get; private set; }
+
         public AddToyWindow()
         {
             InitializeComponent();
@@ -35,6 +37,20 @@ namespace VPLab9
                 BitmapImage bitmap = new BitmapImage(new Uri(imagePath));
                 imagePreview.Source = bitmap;
             }
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            NewToy = new ToyModel
+            {
+                Name = textBoxName.Text,
+                ManufacturerCountry = textBoxManufacturerCountry.Text,
+                Price = Convert.ToDouble(textBoxPrice.Text),
+                TypeOfToy = comboBoxType.Text,
+                ImagePath = ((BitmapImage)imagePreview.Source).UriSource.LocalPath
+            };
+
+            Close();
         }
     }
 }

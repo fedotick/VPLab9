@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -22,7 +23,7 @@ namespace VPLab9
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<ToyModel> toys = new List<ToyModel>();
+        ObservableCollection<ToyModel> toys = new ObservableCollection<ToyModel>();
 
         public MainWindow()
         {
@@ -34,6 +35,13 @@ namespace VPLab9
         {
             AddToyWindow addToyWindow = new AddToyWindow();
             addToyWindow.ShowDialog();
+
+            ToyModel newToy = addToyWindow.NewToy;
+            if (newToy != null)
+            {
+                toys.Add(newToy);
+            }
+
         }
     }
 }

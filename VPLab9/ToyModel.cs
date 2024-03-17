@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VPLab9
 {
-    internal class ToyModel
+    public class ToyModel
     {
         public string Name { get; set; }
         public string ManufacturerCountry { get; set; }
