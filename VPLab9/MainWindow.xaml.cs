@@ -41,7 +41,24 @@ namespace VPLab9
             {
                 toys.Add(newToy);
             }
+        }
 
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+            ToyModel toy = toysDataGrid.SelectedItem as ToyModel;
+
+            if (toy != null)
+            {
+                int index = toys.IndexOf(toy);
+
+                if (index != -1)
+                {
+                    AddToyWindow addToyWindow = new AddToyWindow(toy);
+                    addToyWindow.ShowDialog();
+
+                    toys[index] = addToyWindow.NewToy;
+                }
+            }
         }
     }
 }

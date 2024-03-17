@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,32 @@ namespace VPLab9
         public AddToyWindow()
         {
             InitializeComponent();
+
+            this.Title += "Add";
+        }
+
+        public AddToyWindow(ToyModel toy)
+        {
+            InitializeComponent();
+
+            this.Title += "Edit";
+            btnAdd.Content = "Edit";
+
+            FillingFields(toy);
+        }
+
+        private void FillingFields (ToyModel toy)
+        {
+            textBoxName.Text = toy.Name;
+            textBoxManufacturerCountry.Text = toy.ManufacturerCountry;
+            textBoxPrice.Text = toy.Price.ToString();
+            comboBoxType.Text = toy.TypeOfToy;
+            imagePreview.Source = new BitmapImage(new Uri(toy.ImagePath));
+            
+            if (imagePreview.Source != null)
+            {
+                labelBrowse.Content = "";
+            }
         }
 
         private void LabelBrowse_MouseLeftButtonDown(object sender, RoutedEventArgs e)

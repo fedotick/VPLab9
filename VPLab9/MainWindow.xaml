@@ -37,7 +37,7 @@
             </DataGrid.Columns>
             <DataGrid.ContextMenu>
                 <ContextMenu x:Name="rowContextMenu">
-                    <MenuItem Header="Edit"/>
+                    <MenuItem Header="Edit" Click="Edit_Click"/>
                     <MenuItem Header="Delete"/>
                 </ContextMenu>
             </DataGrid.ContextMenu>
