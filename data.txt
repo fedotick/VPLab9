@@ -1,5 +1,6 @@
 Toy1|China|For girls|205|20240318_225804.jpg
-Toy2|Moldova|For boys|20|20240318_225750.jpg
+Toy2|Moldova|For girls|20|20240318_225750.jpg
 Toy3|China|For girls|205|20240318_225743.jpg
 Toy4|Germany|For boys|20|20240318_225724.jpg
 Toy5|Moldova|For toddlers|205|20240318_225711.jpg
+Toy6|Moldova|For boys|100|20240318_231548.jpg
