@@ -18,11 +18,11 @@
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Menu Height="20" VerticalAlignment="Top" Background="LightGray">
+        <Menu VerticalAlignment="Top" Background="LightGray">
             <MenuItem Header="File">
                 <MenuItem Header="Open..." Click="Open_Click"/>
                 <MenuItem x:Name="menuItemSave" Header="Save" IsEnabled="False" Click="Save_Click"/>

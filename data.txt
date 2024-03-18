@@ -1,0 +1,7 @@
+1|1|For boys|1|C:\Users\Фёдор Ткачук\Pictures\2014-g-power-bmw-m4-f82.jpg
+Toy2|Moldova|For girls|205|https://m.media-amazon.com/images/I/81lroDEpXkL._AC_UF1000,1000_QL80_.jpg
+Toy3|Moldova|For boys|20|https://hips.hearstapps.com/hmg-prod/images/1980s-toy-lead-653ac0489f5bd.png?crop=0.490xw:0.981xh;0.255xw,0&resize=640:*
+Toy4|Poland|For toddlers|250|https://ovico.md/media/catalog/product/cache/2/image/630x/49b3216a00853856695f75be12b817bb/6/x/6x32_mt2bg_100ml.jpg
+Toy5|USA|For boys|150|https://image.smythstoys.com/original/desktop/216934.jpg
+Toy6|USA|For girls|120|https://rukminim2.flixcart.com/image/850/1000/l2urv680/stuffed-toy/8/o/f/baby-elephant-soft-toy-11-ultra-original-image3t6hfmzpdgd.jpeg?q=90&crop=false
+Toy7|China|For girls|190|C:\Users\Фёдор Ткачук\Pictures\2014-g-power-bmw-m4-f82.jpg

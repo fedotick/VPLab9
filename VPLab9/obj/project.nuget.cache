@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s/GIkHx9wdkxSbIQk3KlugzUfN9Fhp0Vh0qLq2USe5BoxMo2tZWt0gS9E7UaeqjHNIgrnIpIuuh+D6+TmL3lRA==",
+  "dgSpecHash": "d9sQdtxTrho44zvxo8qeoQr/dOnWEz/NLL5rb1DisNAXGSw7KFYYeNK0PjPAo7BkHuDvnLPeu+QEd0uuJLG5AA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Фёдор Ткачук\\OneDrive\\CEITI\\III year - II semester\\Visual Programming\\VPLab9\\VPLab9\\VPLab9.csproj",
+  "projectFilePath": "C:\\Users\\Фёдор Ткачук\\OneDrive\\CEITI\\III year - II semester\\Visual Programming\\Lab9\\VPLab9\\VPLab9\\VPLab9.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Фёдор Ткачук\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\Фёдор Ткачук\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
