@@ -61,9 +61,9 @@ namespace VPLab9
                                 ManufacturerCountry = values[1],
                                 TypeOfToy = values[2],
                                 Price = int.Parse(values[3]),
-                                ImagePath = values[4]
+                                ImagePath = AppDomain.CurrentDomain.BaseDirectory + "Images\\" + values[4]
                             };
-
+                            
                             toys.Add(toy);
                         }
                     }
@@ -87,7 +87,7 @@ namespace VPLab9
                 {
                     foreach (var toy in toys)
                     {
-                        sw.WriteLine($"{toy.Name}|{toy.ManufacturerCountry}|{toy.TypeOfToy}|{toy.Price.ToString()}|{toy.ImagePath}");
+                        sw.WriteLine($"{toy.Name}|{toy.ManufacturerCountry}|{toy.TypeOfToy}|{toy.Price.ToString()}|{System.IO.Path.GetFileName(toy.ImagePath)}");
                     }
                 }
 
@@ -114,7 +114,7 @@ namespace VPLab9
                     {
                         foreach (var toy in toys)
                         {
-                            sw.WriteLine($"{toy.Name}|{toy.ManufacturerCountry}|{toy.TypeOfToy}|{toy.Price.ToString()}|{toy.ImagePath}");
+                            sw.WriteLine($"{toy.Name}|{toy.ManufacturerCountry}|{toy.TypeOfToy}|{toy.Price.ToString()}|{System.IO.Path.GetFileName(toy.ImagePath)}");
                         }
                     }
 
