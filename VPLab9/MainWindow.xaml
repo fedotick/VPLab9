@@ -37,7 +37,7 @@
             </MenuItem>
         </Menu>
 
-        <DataGrid x:Name="toysDataGrid" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid x:Name="toysDataGrid" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" ColumnWidth="*">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}">
                     <DataGridTextColumn.ElementStyle>
